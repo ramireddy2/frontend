@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <input type="text" id="num" name="enter the number"  placeholder="enter a value">
+    <button type="button" onclick="table()">submit</button>
+    <script>
+        function table() {
+            var x=document.getElementById("num").value;
+
+
+            for (var i = 1; i <= 10; i++) {
+                r = x * i;
+                console.log("the value of " + x + " * " + i + " is :-" + r +" ");
+            }
+        }
+
+    </script>
+    <!--     <input type="chechbox" value="">
+ -->
+</body>
+
+</html>

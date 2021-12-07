@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>combinators</title>
+        <style>
+            div p{
+                /*desendent selector -inside div tag only except section tag */
+                background: lime;
+            }
+            div >p{
+                /*child selector - inside section tag*/
+                background: mediumblue;
+            }
+            div +p{
+                /*adjacent sipling selector -after div first tag*/
+                background: mediumvioletred;
+            }
+            div ~p{
+                /*general sipling selector - after div n number of tags*/
+                background: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>combinators</h1>
+        <div>
+            <p>hgdhghlkuyjgjkujyhtgrgtyulkuyj </p>
+            <p>hgdhghlkuyjgjkujyhtgrgtyulkuyj </p>
+            <section><p>hgdhghlkuyjgjkujyhtgrgtyulkuyj </p></section>
+            <p>hgdhghlkuyjgjkujyhtgrgtyulkuyj </p>
+        </div>
+        <p>hgdhghlkuyjgjkujyhtgrgtyulkuyj </p>
+        <p>hgdhghlkuyjgjkujyhtgrgtyulkuyj </p>
+        <p>hgdhghlkuyjgjkujyhtgrgtyulkuyj </p>
+    </body>
+</html>
